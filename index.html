@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/Favicon.png">
+    <title>Sorteio Traker</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="bingo-ball" id="bingoBall">B</h1>
+        <input type="text" id="numberInput" placeholder="Digite o número" maxlength="3" autocomplete="off">
+        <button onclick="updateNumber()" id="updateButton">Atualizar <span class="spinner" id="spinner"></span></button>
+        <button class="new-bingo" onclick="newBingo()">Novo Sorteio</button>
+        <div class="log-container">
+            <div class="log-header">
+                <span onclick="downloadNumbers()">🍀Números Sorteados</span>
+                <!-- <button onclick="downloadNumbers()">Baixar Números</button> -->
+            </div>
+            <ul id="numberLog"></ul>
+        </div>
+        <a href="https://www.instagram.com/derikincode/"><span class="credits">Developed by Derik</span></a>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
